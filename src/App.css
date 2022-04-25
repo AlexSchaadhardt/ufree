@@ -2,21 +2,24 @@
   text-align: center;
 }
 
+.layered {
+  display: grid;
+  justify-items: start;
+  align-items: start;
+}
+.layered >* {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
 .cover {
-  height: 20vmin;
-  position: fixed;
-  left: 39%;
-  width: 11%;
-  height: auto;
-  pointer-events: none;
-  float:left;
+  height: 24vmin;;
+
 }
 .wheel {
-  margin-top: 14px;
-  margin-right: 30px;
-  height: 20vmin;
-  position: relative;
-  pointer-events: none;
+  margin-top: 8%;
+  margin-left: 8%;
+  height: 20.5vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,9 +40,19 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: rgb(0, 0, 0);
 }
 
+.Router {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 .Form-login {
   background-color: rgba(229, 255, 0, 0.11);
   border-radius: 20px;

@@ -40,19 +40,19 @@ function CreateAccount() {
         <h3>Create Account</h3>
         <div className="Form-login-entry">
             <label htmlFor="exampleFormControlInput1" className="form-label">Username</label>
-            <input type="userName" userName="userName" className="form-control" value={form.userName}
+            <input type="userName" name="userName" className="form-control" value={form.userName}
                 onChange={inputHandler} id="exampleFormControlInput1" />
         </div>
         <div className="Form-login-entry">
             <label htmlFor="exampleFormControlInput1" className="form-label">Email</label>
             <input type="email" value={form.email} onChange={inputHandler}
-                userName="email" className="form-control" id="exampleFormControlInput1"
+                name="email" className="form-control" id="email-entry"
                 placeholder="userName@example.com" />
         </div>
         <div className="Form-login-entry">
             <label htmlFor="exampleFormControlInput1" className="form-label">password</label>
             <input type="password" value={form.password} onChange={inputHandler}
-                userName="password" className="form-control" id="exampleFormControlInput1" />
+                name="password" className="form-control" id="password-entry" />
         </div>
         <div className="Form-login-entry">
             <button type='submit' onClick={submitButton} className="Login-Btn">Submit</button>

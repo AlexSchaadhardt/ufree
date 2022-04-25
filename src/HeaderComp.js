@@ -8,7 +8,7 @@ function HeaderComp() {
             <table>
             <tbody>
                 <tr>
-                <td>
+                <td className="layered">
                 <img src = {wheel} className="wheel" alt="logo"/>
                 <img src = {cover} className="cover" alt="logo"/>
                 </td>

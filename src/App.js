@@ -1,18 +1,31 @@
 import './App.css';
-import HeaderComp from './HeaderComp';
-import Login from './Login';
-import CreateAccount from './Create-account';
+import {BrowserRouter as Router, Route } from "react-router-dom";
 
+import HomePage from './pages/HomePage';
+import ProfilePage from './pages/ProfilePage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      
-              <HeaderComp/>
-              <Login/>
-              <CreateAccount/>
+      <Router>
+        <header className="App-header">
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Route path="/profile">
+            <ProfilePage />
+          </Route>
+          <Route path="/contact">
+            <ContactPage />
+          </Route>
+        </header>
+      </Router>
+
               {/*
+              
+              
               <p style="text-align: center;"></p>
               <form action="./account" method="post">
                   <fieldset>
