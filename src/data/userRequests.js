@@ -1,7 +1,7 @@
-const userResquests = {
+const userRequests = {
     
-        Billy23: [SpaceBoi21, AcidSplash]
+        Billy23: ["SpaceBoi21", "AcidSplash"]
 
         }
 
-export default userResquests;
+export default userRequests;

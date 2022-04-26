@@ -3,6 +3,8 @@ import React, { useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import users from './data/users.js'
 function LoginForm() {
+
+
   const [name, setName] = useState('');
   const history= useHistory();
   const validate = (username) => {
@@ -28,15 +30,19 @@ function LoginForm() {
     <div>
         <form>
           <fieldset>
-            <legend>Your Details</legend>
-            <label>Please enter your username
+            <legend>Login</legend>
+            <label>Username:
               <input type="text" value={name}
                 onChange={e => setName(e.target.value)} 
                 />
             </label>
           </fieldset>
-          <button onDoubleClick={validate(name)}> 
+          <button onClick={e => {
+            validate(name)
+            e.preventDefault()
+            }}>
             Submit </button>
+
         </form>
     </div>
   );

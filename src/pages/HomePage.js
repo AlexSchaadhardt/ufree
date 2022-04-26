@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import HeaderComp from '../HeaderComp';
 import LoginForm from '../LoginForm';
-import CreateAccount from '../Create-account';
+import CreateAccount from '../CreateAccount';
 
 function HomePage() {
     return(
@@ -10,7 +10,7 @@ function HomePage() {
             <HeaderComp/>
             <LoginForm/>
             <CreateAccount/>
-            <Link className="App-link" to="/profile"> Go to the Profile Page</Link>
+            <Link className="App-link" to="/profile"> View App Demo</Link>
         </>
     )
 }

@@ -58,11 +58,15 @@
 
   h1 {
     font-family: Tahoma, Geneva, sans-serif;
+    font-size: 40px;
     letter-spacing: 2px;
-    color: #000000;
+    color: #f3e40b;
     font-weight: 700;
     text-decoration: none;
     font-style: normal;
     font-variant: small-caps;
     text-transform: none;
+  }
+  .descriptor {
+      font-size: 20px;
   }

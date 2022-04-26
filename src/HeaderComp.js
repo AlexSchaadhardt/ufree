@@ -23,6 +23,8 @@ function HeaderComp() {
         </tbody>
         </table>
         <p style={{textAlign: "center"}}><strong>Social Status Updating Service</strong></p>
+        <p className='descriptor'>Passively share your social availability with friends!</p>
+        <p className='descriptor'> Be free instead of asking "u free?"</p>
             <hr />
         </div>
 
