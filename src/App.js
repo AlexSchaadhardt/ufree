@@ -1,9 +1,8 @@
 import './App.css';
-import {BrowserRouter as Router, Route } from "react-router-dom";
-
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
-import ContactPage from './pages/FriendRequests';
+import FriendRequests from './pages/FriendRequests';
 
 function App() {
   return (
@@ -11,15 +10,14 @@ function App() {
       <header>
       <Router>
         <header className="App-header">
-          <Route path="/" exact>
-            <HomePage />
+         <Switch>
+          <Route exact path="/profile" component={ProfilePage}>
           </Route>
-          <Route path="/profile">
-            <ProfilePage />
+          <Route exact path="/friendrequests" component={FriendRequests}>
           </Route>
-          <Route path="/contact">
-            <ContactPage />
+           <Route exact path="/"  component={HomePage}>
           </Route>
+          </Switch>
         </header>
       </Router>
 

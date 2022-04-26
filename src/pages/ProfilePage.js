@@ -6,7 +6,7 @@ import '../Header.css'
 import users from '../data/users.js'
 import UserList from '../UserList';
 
-function ProfilePage({username}) {
+function ProfilePage() {
     return (
         <header className="App">
             <Header/>
