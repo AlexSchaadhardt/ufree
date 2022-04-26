@@ -9,7 +9,7 @@ import './Header.css';
 function Header() {
     return (
             <div className = "layered">
-            <div className = "ProfileTitle">UFree</div>
+            <h1 className = "ProfileTitle">UFree</h1>
             <img className="LawnLeft" src={lawn} alt="lawnleft"/>
             <img className="LawnRight" src={lawn} alt="lawnright"/>
             <img className="LawnCenter" src={lawn} alt="lawnright"/>

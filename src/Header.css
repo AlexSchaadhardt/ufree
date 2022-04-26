@@ -30,5 +30,39 @@
     left:33%;
 }
 .ProfileTitle {
-    z-index: 1;
+    position:relative;
+    z-index: 3;
+    margin-left:auto;
+    margin-right:auto;
 }
+
+.layered {
+    display: grid;
+    justify-items: start;
+    align-items: start;
+  }
+  .layered >* {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  
+  .cover {
+    height: 24vmin;;
+  
+  }
+  .wheel {
+    margin-top: 8%;
+    margin-left: 8%;
+    height: 20.5vmin;
+  }
+
+  h1 {
+    font-family: Tahoma, Geneva, sans-serif;
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+  }

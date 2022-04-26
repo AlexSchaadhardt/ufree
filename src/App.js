@@ -3,12 +3,12 @@ import {BrowserRouter as Router, Route } from "react-router-dom";
 
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
-import ContactPage from './pages/ContactPage';
+import ContactPage from './pages/FriendRequests';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
       <Router>
         <header className="App-header">
           <Route path="/" exact>

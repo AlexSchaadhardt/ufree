@@ -2,25 +2,6 @@
   text-align: center;
 }
 
-.layered {
-  display: grid;
-  justify-items: start;
-  align-items: start;
-}
-.layered >* {
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
-
-.cover {
-  height: 24vmin;;
-
-}
-.wheel {
-  margin-top: 8%;
-  margin-left: 8%;
-  height: 20.5vmin;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .cover {
@@ -33,6 +14,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex: auto;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -79,4 +61,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+td{
+  padding-left: 5px;
 }

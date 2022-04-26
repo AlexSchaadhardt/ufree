@@ -1,6 +1,8 @@
 import React from 'react';
 import wheel from './svg/wheel.svg';
 import cover from './svg/cover.svg';
+import './Header.css'
+
 
 function HeaderComp() {
     return (
