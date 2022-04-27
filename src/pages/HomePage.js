@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HeaderComp from '../HeaderComp';
-import LoginForm from '../LoginForm';
-import CreateAccount from '../CreateAccount';
+import HeaderComp from '../_components/HeaderComp';
+import LoginForm from '../_account/LoginForm';
+import CreateAccount from '../_account/CreateAccount';
 
 function HomePage() {
     return(

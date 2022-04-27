@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../Header';
+import Header from '../_components/Header';
 import '../App.css';
 import '../Header.css'
 import users from '../data/users.js'

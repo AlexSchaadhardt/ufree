@@ -1,10 +1,10 @@
 import React from 'react';
-import lawn from './img/lawn.png';
-import panelLeft from './img/panelLeft.png';
-import panelRight from './img/panelRight.png';
-import panelSky from './img/panelSky.png';
-import './App.css';
-import './Header.css';
+import lawn from '../img/lawn.png';
+import panelLeft from '../img/panelLeft.png';
+import panelRight from '../img/panelRight.png';
+import panelSky from '../img/panelSky.png';
+import '../App.css';
+import '../Header.css';
 
 function Header() {
     return (
