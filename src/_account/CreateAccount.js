@@ -12,22 +12,16 @@ function CreateAccount() {
     if (username === '' || password === '' || name === '' || email ==='') {
       alert('Please fill all the fields')
     }
-    else if (
-      users.map(user => {
-        console.log(user.Username)
-        if (user.Username === username){
+    else {
+      for (let i = 0; i<users.length; i++) {
+        if (users[i].Username === username){
           alert('Account already exists with this username.')
           return false
-        }
-        else {
-          return true
-        }
-
-      })) {
+        }}
       push(username, password, name, email)
       }
     }
-  const push = (username) => {
+  const push = (username, password, name, email) => {
         alert(`You created account with username ${username}`);
         
       }
