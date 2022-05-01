@@ -8,6 +8,7 @@ import UserList from '../UserList';
 import Status from '../Status';
 
 function ProfilePage() {
+    let curUser = 'test'
     return (
         <header className="App">
             <Header/>
@@ -16,7 +17,7 @@ function ProfilePage() {
             <br></br>
             <Link className="App-link" to="/friendrequests">Friend Requests</Link>
            
-            <UserList users={users}/>
+            <UserList users={users} curUser = {curUser} />
             <Link className="App-link" to="/">Log Out</Link>
         </header>
     );

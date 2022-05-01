@@ -16,15 +16,12 @@ function LoginForm() {
     if (username === '' || password === '') {
       alert('Please fill all the fields')
     }
-    users.map(user => {
-      console.log(user.Username, user.Password)
-      if (user.Username === username && user.Password === password){
+    for (let i = 0; i<users.length; i++) {
+      if (users[i].Username === username && users[i].Password === password){
         console.log("Match Found")
         push(username)
         return true}
-      else {
-        return false}
-      })
+      }
       resetButton();
     };
   const resetButton = (e) => {
