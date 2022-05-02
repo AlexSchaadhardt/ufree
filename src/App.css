@@ -1,5 +1,13 @@
-.App {
+body {
   text-align: center;
+  background-color: #001401;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: white;
 }
 
 
@@ -9,32 +17,10 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex: auto;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: rgb(255, 208, 0);
 }
 
-.Router {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 .Form-login {
   background-color: rgba(229, 255, 0, 0.11);
   border-radius: 20px;
@@ -67,3 +53,16 @@ td{
   padding-left: 5px;
 }
 
+
+.userDisplay {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+}
+
+.list-container {
+  position: relative;
+  border: 6px solid rgb(0, 255, 136);
+  padding: 32px;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import '../App.css'
-import FriendList from '../FriendList';
+import FriendList from '../_components/FriendList';
 import userRequests from '../data/userRequests';
 
 function FriendRequests() {

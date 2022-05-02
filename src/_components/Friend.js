@@ -1,6 +1,5 @@
 import React from 'react';
-import './user.css'
-import './App.css'
+import '../App.css'
 
 
 function User({ friend}) {

@@ -4,8 +4,8 @@ import Header from '../_components/Header';
 import '../App.css';
 import '../Header.css'
 import users from '../data/users.js'
-import UserList from '../UserList';
-import Status from '../Status';
+import UserList from '../_components/UserList';
+import Status from '../_components/Status';
 
 function ProfilePage() {
     let curUser = 'test'
