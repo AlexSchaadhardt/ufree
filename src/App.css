@@ -1,13 +1,17 @@
 body {
   text-align: center;
   background-color: #001401;
+  
+  font-size: calc(12px + 2vmin);
+  color: white;
+}
+
+.login-page {
   display: flex;
   flex-direction: column;
   flex: auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(12px + 2vmin);
-  color: white;
 }
 
 

@@ -6,12 +6,12 @@ import CreateAccount from '../_account/CreateAccount';
 
 function HomePage() {
     return(
-        <>
+        <div className='login-page'>
             <HeaderComp/>
             <LoginForm/>
             <CreateAccount/>
             <Link className="App-link" to="/profile"> View App Demo</Link>
-        </>
+        </div>
     )
 }
 
