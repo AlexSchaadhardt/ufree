@@ -6,11 +6,20 @@ import CreateAccount from '../_account/CreateAccount';
 
 function HomePage() {
     return(
-        <div className='login-page'>
-            <HeaderComp/>
-            <LoginForm/>
-            <CreateAccount/>
-            <Link className="App-link" to="/profile"> View App Demo</Link>
+        <div className='home-page'>
+            <div className='home-page-header'>
+            <HeaderComp />
+            </div>
+            <div className='home-page-left'>
+                <CreateAccount/>
+            </div>
+            <div className = 'home-page-right'>
+                 <LoginForm></LoginForm>
+            </div>
+            <footer>
+                 <Link className="link" to="/profile"> View App Demo</Link>
+            </footer>
+           
         </div>
     )
 }

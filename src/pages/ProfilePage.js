@@ -10,15 +10,16 @@ import Status from '../_components/Status';
 function ProfilePage() {
     let curUser = 'test'
     return (
-        <header className="App">
-            <Header/>
-            <div style={{height:"250px"}}></div>
+        <header>
+            <Header></Header>
+            <div id="header-grad"  style={{position: 'relative', top: '99px'}}>
             <Status/>
             <br></br>
-            <Link className="App-link" to="/friendrequests">Friend Requests</Link>
-           
-            <UserList users={users} curUser = {curUser} />
-            <Link className="App-link" to="/">Log Out</Link>
+            <Link className="link" to="/friendrequests">Friend Requests</Link>
+            <UserList users={users} curUser = {curUser} />       
+            <Link className="link" to="/">Log Out</Link>
+            </div>
+  
         </header>
     );
 }

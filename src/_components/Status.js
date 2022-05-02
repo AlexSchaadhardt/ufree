@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { RiRestTimeFill, RiRestTimeLine} from "react-icons/ri";
 import {RiSmartphoneFill, RiSmartphoneLine } from "react-icons/ri";
 import { MdPerson, MdPersonOutline } from "react-icons/md";
+import '../App.css'
 
 
 function Status () {
@@ -12,21 +13,22 @@ function Status () {
     const [isCall, setCall] = useState(call);
     const [isFree, setFree] = useState(free)
     const toggleBusy = () => {setBusy(true); setCall(false); setFree(false)};
-    const toggleFree = () => {setBusy(false); setCall(true); setFree(false)};
-    const toggleCall = () => {setBusy(false); setCall(false); setFree(true)};
+    const toggleCall = () => {setBusy(false); setCall(true); setFree(false)};
+    const toggleFree = () => {setBusy(false); setCall(false); setFree(true)};
+   
     return (
         <>
         {isBusy
-        ? <RiRestTimeFill onClick={toggleBusy} />
-        : <RiRestTimeLine onClick={toggleBusy} />
+        ? <RiRestTimeFill className='status-icon' onClick={toggleBusy} />
+        : <RiRestTimeLine className='status-icon' onClick={toggleBusy} />
         }
         {isCall
-        ? <RiSmartphoneFill onClick={toggleCall} />
-        : <RiSmartphoneLine onClick={toggleCall} />
+        ? <RiSmartphoneFill className='status-icon' onClick={toggleCall} />
+        : <RiSmartphoneLine className='status-icon' onClick={toggleCall} />
         }
         {isFree
-        ? <MdPerson onClick={toggleFree} />
-        : <MdPersonOutline onClick={toggleFree} />
+        ? <MdPerson className='status-icon' onClick={toggleFree} />
+        : <MdPersonOutline className='status-icon' onClick={toggleFree} />
         }
         </>
     );

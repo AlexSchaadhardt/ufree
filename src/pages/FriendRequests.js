@@ -27,9 +27,9 @@ function FriendRequests() {
             Submit </button>
         </form>
 
-        <Link className="App-link" to="/profile">Return to Profile</Link>
+        <Link className="link" to="/profile">Return to Profile</Link>
         <FriendList userRequests= {userRequests} />
-        <Link className="App-link" to="/">Log Out</Link>
+        <Link className="link" to="/">Log Out</Link>
         </>
     );
 }

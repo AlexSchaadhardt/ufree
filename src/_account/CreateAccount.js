@@ -26,7 +26,7 @@ function CreateAccount() {
         
       }
   return (
-    <div>
+    <span>
         <form>
           <fieldset>
             <legend>Create Account</legend>
@@ -65,7 +65,7 @@ function CreateAccount() {
 
 
         </form>
-    </div>
+    </span>
   );
 }
 export default CreateAccount;

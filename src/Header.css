@@ -1,7 +1,7 @@
-.Sky, .Houses, .City, .LawnCenter, .LawnLeft, .LawnRight{
+.Sky, .Houses, .City, .Lawn{
     position: absolute;
     top: 0;
-    height: 30%;
+    height: 200px;
 }
 .City {
     right: 0;
@@ -10,25 +10,17 @@
 .Sky {
     width:100%;
     left:0;
-    height:20%;
+    height:90px;
     z-index: 0;
 }
 .Houses{
     left: 0;
     z-index: 2;
 }
-.LawnLeft {
+.Lawn {
     z-index: 1;
-    left: 5%;
 }
-.LawnRight {
-    z-index: 1;
-    right: 5%;
-}
-.LawnCenter {
-    z-index: 1;
-    left:33%;
-}
+
 .ProfileTitle {
     position:relative;
     z-index: 3;

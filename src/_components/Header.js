@@ -10,12 +10,16 @@ function Header() {
     return (
             <div className = "layered">
             <h1 className = "ProfileTitle">UFree</h1>
-            <img className="LawnLeft" src={lawn} alt="lawnleft"/>
-            <img className="LawnRight" src={lawn} alt="lawnright"/>
-            <img className="LawnCenter" src={lawn} alt="lawnright"/>
+            <img className="Lawn" src={lawn} style={{left:'5%'}} alt="Lawn"/>
+            <img className="Lawn" src={lawn} style={{left:'20%'}}alt="Lawn"/>
+            <img className="Lawn" src={lawn} style={{left:'35%'}}alt="Lawn"/>
+            <img className="Lawn" src={lawn} style={{left:'50%'}}alt="Lawn"/>
+            <img className="Lawn" src={lawn} style={{left:'65%'}}alt="Lawn"/>
+            <img className="Lawn" src={lawn} style={{left:'75%'}}alt="Lawn"/>
             <img className="Houses" src={panelLeft} alt="houses"/>
             <img className="City" src={panelRight} alt="city"/>
             <img className="Sky" src={panelSky} alt="sky"/>
+            
             </div>
     );
 }
