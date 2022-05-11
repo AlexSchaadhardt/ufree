@@ -12,7 +12,27 @@ function LoginForm() {
 
   const history= useHistory();
   const validate = (username, password) => {
-    console.log(password)
+    console.log(username + " and " + password)
+    const validateURL = ["http://localhost:3001/?username=" + username + "&password=" + password]
+    fetch(validateURL, {
+     
+    })
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json)
+      if (json["validation"] === "username"){
+        alert("Username did not match or is not in system.")
+      }
+      else if (json["validation"] === "password") {
+        alert("Password did not match or is not in system.")
+      }
+      else if (json["validation"] === "success") {
+        push(username)
+        return true
+      }
+      resetButton()
+    })
+    /*
     if (username === '' || password === '') {
       alert('Please fill all the fields')
     }
@@ -23,7 +43,9 @@ function LoginForm() {
         return true}
       }
       resetButton();
+      */
     };
+    
   const resetButton = (e) => {
       setName('')
       setPassword('')
