@@ -1,6 +1,5 @@
 import '../App.css';
 import React, { useState} from 'react';
-import users from '../data/users.js'
 
 
 function CreateAccount() {
