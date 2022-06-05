@@ -12,8 +12,16 @@ td{
 footer {
   position:absolute;
   bottom: 50px;
-  left: 40%;
-  right: 40%;
+  left: 35%;
+  right: 35%;
+}
+button {
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  font-size: medium;
+  background-color: rgb(210, 250, 210);
+  color: rgb(0, 0, 0);
 }
 .home-page {
   background: linear-gradient(#93cf89,#004904cc, #001401);

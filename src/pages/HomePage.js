@@ -19,17 +19,17 @@ function HomePage() {
                     push("register")
                     e.preventDefault()
                     }}>
-                    Register Account </button>
+                    Register </button>
             </div>
             <div className = 'home-page-right'>
                 <button onClick={e => {
                     push("login")
                     e.preventDefault()
                     }}>
-                    Login to Account </button>
+                    Login </button>
             </div>
             <footer>
-                 <Link className="link" to="/profile"> View App Demo</Link>
+                 <Link className="link" to="/profile/test"> View App Demo</Link>
             </footer>
            
         </div>

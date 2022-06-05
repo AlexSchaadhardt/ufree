@@ -7,8 +7,10 @@ import users from '../data/users.js'
 import UserList from '../_components/UserList';
 import Status from '../_components/Status';
 
-function ProfilePage() {
-    let curUser = 'test'
+function ProfilePage(curUser) {
+    const logout = () => {
+        window.location.href = "http://localhost:3001/logout"
+    }
     return (
         <header>
             <Header></Header>
@@ -17,9 +19,11 @@ function ProfilePage() {
             <br></br>
             <Link className="link" to="/friendrequests">Friend Requests</Link>
             <UserList users={users} curUser = {curUser} />       
-            <Link className="link" to="/">Log Out</Link>
+            <Link className="link" onClick={e => {
+                    logout()
+                    e.preventDefault()
+                    }}>Log Out</Link>
             </div>
-  
         </header>
     );
 }

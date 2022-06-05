@@ -11,8 +11,10 @@ function App() {
       <Router>
         <header className="App-header">
          <Switch>
-          <Route exact path="/profile" component={ProfilePage}>
+          <Route path="/profile/:name">
+            {( {name}) => <ProfilePage curUser={name}/>}
           </Route>
+
           <Route exact path="/friendrequests" component={FriendRequests}>
           </Route>
            <Route exact path="/"  component={HomePage}>
@@ -20,48 +22,6 @@ function App() {
           </Switch>
         </header>
       </Router>
-
-              {/*
-              
-              
-              <p style="text-align: center;"></p>
-              <form action="./account" method="post">
-                  <fieldset>
-                      <legend> Log In: </legend>
-                      <label> Username:
-                          <input type={{text}} name={{username}} size={{30}} maxlength={{100}} required={{required}}> </input>
-                      <br></br>
-                      </label>
-                      <label> Password:
-                          <input type="password" name="password" size="30" maxlength="100" required="required"></input>
-                      </label>
-                      <button type="submit"> Submit</button>
-                  </fieldset>
-
-              </form>
-              <br> </br>
-              <form action="/create_account" method="post">
-                  <fieldset>
-                      <legend> Create Account: </legend>
-                      <label> Username:
-                          <input type="text" name="name" size="30" maxlength="100" required="required"></input>
-                      </label>
-                      <br></br>
-                      <label> Email:
-                          <input type="email" name="email" size="30" maxlength="100" required="required"></input>
-                      </label>
-                      <label> Password:
-                          <input type="password" name="password" size="30" maxlength="100" required="required"></input>
-                      </label>
-                      <button type="submit"> Submit</button>
-                  </fieldset>
-
-              </form>
-              <br></br>
-              <footer>
-                  Instead of messaging friends over and over again, invite them to use this application where they can share if they are free, when they are free.
-              </footer>
-  */}
       </header>
           
     </div>
